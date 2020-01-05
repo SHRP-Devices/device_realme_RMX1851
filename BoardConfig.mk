@@ -127,7 +127,7 @@ PLATFORM_VERSION := 16.1.0
 PLATFORM_SECURITY_PATCH := 2099-12-31
 #SHRP flags
 # Maintainer name
-SHRP_MAINTAINER :=  kanged99
+SHRP_MAINTAINER := kanged99
 # Device codename
 SHRP_DEVICE_CODE := RMX1851
 # put this 0 if device has no EDL mode

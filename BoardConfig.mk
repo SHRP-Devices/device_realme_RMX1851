@@ -142,5 +142,5 @@ SHRP_FONP_2 := /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440$
 SHRP_FONP_3 := /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440$3/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:switch_0/brightness
 # Max Brightness of LED
 SHRP_FLASH_MAX_BRIGHTNESS := 200
- Check your device's recovery path, dont use blindly
+#check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery

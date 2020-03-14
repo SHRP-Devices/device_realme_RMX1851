@@ -15,6 +15,7 @@
 #
 
 SHRP_PATH := device/realme/RMX1851
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -125,23 +126,45 @@ TW_OZIP_DECRYPT_KEY := "1c4c1ea3a12531ae491b21bb31613c11"
 # Hack: prevent anti rollback
 PLATFORM_VERSION := 16.1.0
 PLATFORM_SECURITY_PATCH := 2099-12-31
-#SHRP flags
+
+#SHRP specific flags
+
 # Maintainer name
 SHRP_MAINTAINER := kanged99
+
 # Device codename
 SHRP_DEVICE_CODE := RMX1851
+
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 1
+
 SHRP_EXTERNAL := /sdcard1
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usb_otg
+
 # Put 0 to disable flashlight
 SHRP_FLASH := 1
+
 # These are led paths, find yours then put here
 #SHRP_FONP_1 := "/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440$3/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/brightness"
 #SHRP_FONP_2 := /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440$3/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/brightness
 #SHRP_FONP_3 := /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440$3/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:switch_0/brightness
-# Max Brightness of LED
+
+# Max Brightness of LED (Optional)
 SHRP_FLASH_MAX_BRIGHTNESS := 200
-#check your device's recovery path, dont use blindly
+
+# Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
+
+# Use this flag only if your device is A/B
+SHRP_AB := false
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section]
+SHRP_REC_TYPE := SAR
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section]
+SHRP_DEVICE_TYPE := A_Only
+
+# SHRP Padding Flag (Only for rounded corner devices.)
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40

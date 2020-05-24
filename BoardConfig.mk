@@ -131,6 +131,7 @@ TW_NO_HAPTICS := true
 PLATFORM_VERSION := 16.1.0
 PLATFORM_SECURITY_PATCH := 2099-12-31
 #SHRP flags
+SHRP_OFFICIAL := true
 # Maintainer name
 SHRP_MAINTAINER := kanged99
 # Device codename
@@ -150,3 +151,5 @@ SHRP_FLASH := 1
 SHRP_FLASH_MAX_BRIGHTNESS := 200
 #check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DARK := true
+SHRP_EXPRESS := true

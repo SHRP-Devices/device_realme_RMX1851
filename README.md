@@ -21,7 +21,7 @@ Works:
 First checkout minimal twrp with omnirom tree:
 
 ```
-repo init -u git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b 9.0
+repo init -u git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
 
 repo sync
 ```

@@ -151,4 +151,6 @@ SHRP_REC_TYPE := Treble
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
 SHRP_EXPRESS := true
 SHRP_DARK := true
-
+SHRP_NOTCH := true
+SHRP_STATUSBAR_RIGHT_PADDING := 48
+SHRP_STATUSBAR_LEFT_PADDING := 48

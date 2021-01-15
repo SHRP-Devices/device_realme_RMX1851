@@ -128,7 +128,7 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 #SHRP flags
 #SHRP_OFFICIAL := true
 # Maintainer name
-#SHRP_MAINTAINER := kanged99
+SHRP_MAINTAINER := kanged99
 # Device codename
 SHRP_DEVICE_CODE := RMX1851
 # put this 0 if device has no EDL mode
@@ -147,10 +147,21 @@ SHRP_FLASH_MAX_BRIGHTNESS := 200
 #check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_DEVICE_TYPE := A_Only
-SHRP_REC_TYPE := Treble
+SHRP_REC_TYPE := SAR
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
 SHRP_EXPRESS := true
 SHRP_DARK := true
 SHRP_NOTCH := true
 SHRP_STATUSBAR_RIGHT_PADDING := 48
 SHRP_STATUSBAR_LEFT_PADDING := 48
+# keep addons in recovery ramdisk instead of internal storage
+#Addon - Substratum Overlay (OMS -Normal- disabler)
+INC_IN_REC_ADDON_1 := true
+#Addon - Substratum Overlay (OMS -legacy- disabler)
+INC_IN_REC_ADDON_2 := true
+#Addon - Clear Fingerprint (remove fingerprint lock from system)
+INC_IN_REC_ADDON_3 := true
+#Addon - Force Encryption (remove force encryption from your device)
+INC_IN_REC_ADDON_4 := true
+# Default (if not set) is NOT adding it to the ramdisk but internal storage.
+INC_IN_REC_MAGISK := true

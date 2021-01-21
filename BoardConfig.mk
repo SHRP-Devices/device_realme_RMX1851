@@ -165,3 +165,20 @@ INC_IN_REC_ADDON_3 := true
 INC_IN_REC_ADDON_4 := true
 # Default (if not set) is NOT adding it to the ramdisk but internal storage.
 INC_IN_REC_MAGISK := true
+# Custom addon folder. Do not forget to put a "/" at the end of the path!
+SHRP_EXTERNAL_ADDON_PATH := "device/realme/RMX1851/addons/"
+SHRP_EXTERNAL_ADDON_1_NAME := "SDM710 Vulkan Drivers"
+SHRP_EXTERNAL_ADDON_2_NAME := "Selinux Permissiver"
+SHRP_EXTERNAL_ADDON_3_NAME := "Selinux Enforcer"
+SHRP_EXTERNAL_ADDON_1_INFO := "Vulkan graphic drivers for SDM710 (i.e RMX1851)"
+SHRP_EXTERNAL_ADDON_2_INFO := "Flash this to make selinux of installed rom permissive"
+SHRP_EXTERNAL_ADDON_3_INFO := "Flash this to make selinux of installed rom enforcing"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "vulkan.zip"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "permissiver.zip"
+SHRP_EXTERNAL_ADDON_3_FILENAME := "enforcer.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Install"
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Install"
+SHRP_EXTERNAL_ADDON_3_BTN_TEXT := "Install"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Installed"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Installed"
+SHRP_EXTERNAL_ADDON_3_SUCCESSFUL_TEXT := "Installed"
